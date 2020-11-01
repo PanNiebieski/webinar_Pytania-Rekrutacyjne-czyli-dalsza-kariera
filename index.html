@@ -324,7 +324,7 @@
         <span class="shout colors"><span>Anatomia rozmowy o pracy
         </span></span>
     </section>
-    <section class="slide creamP compact">
+    <section class="slide creamB compact">
         <h2>Anatomia rozmowy o pracy</h2>
         <ol>
             <li class="next">Aby Ciebie zmotywować dostajesz skrót pracy do której aplikujesz</li>
@@ -349,21 +349,21 @@
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide creamGrey ">
-        <span class="shout colors" style="font-size: 150%;"><span>
+    <section class="slide creamGrey  ggg">
+        <span class="shout colors" style="font-size: 120% !important"><span>
             Dla wielu ludzi pracowanie dla Google czy Microsoftu jest marzeniem!<br />
-            Dlaczego miałbyś być nieszczęliwy nie pracując dla wielkich firm programistycznych<br />
+            Dlaczego miałbyś być nieszczęliwy nie pracując dla wielkich firm programistycznych<br /><br />
             Nie musisz jednak pracować dla wielkich firm, aby znaleźć cel. <br />
             Cel możesz znaleźć wszędzie w małych i dużych firmach<br />
             Rozmiar firmy nie ma znaczenia. Ważne czy ty jesteś szczęśliwy<br />
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide cream">
         <span class="shout colors"><span>
             Historia pewnej rozmowy 3 amerykanami, architektami.
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide cream">
         <span class="shout colors"><span>
             Nawet jeśli zawaliś pytania czy twoje CV nie pasuje do stanowiska.
             To wciąż masz szanse znaleźć prace
@@ -381,191 +381,887 @@
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>Poległem bo nie wiedziałem jak : jest "szyna" po angielsku, 
-            Przy pytaniu Innet Join i Outer Join zapomniałem jak się mówi zbiór po angielsku 
-        </span></span>
-    </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>Dostałem też kiedyś pytanie : JaggedArray
-        </span></span>
+    <section class="slide cream  compact">
+        <h2>Moje przykładowe problemy z angielskim na rozmowach</h2>
+        <ol>
+            <li >Zapomniałem czym jest "szyna" po angielsku</li>
+            <li >Przy pytaniu o JOIN zapomniałem jak mówi się "zbiór" po angielsku</li>
+            <li >Nie umiałem odpowiedzieć na to co to jest "Jagged Array"</li>
+        </ol>
     </section>
     <section class="slide creamP">
         <span class="shout colors"><span>Przykładowe Pytania rekrutacyjne
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>C#
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>1. Proszę podać róźnice pomiędzy typem wartościowym, a refercyjnym?
+    <section class="slide  creamGrey ggg">
+        <span class="shout colors"><span>C#-1-1 <br />Proszę podać róźnice pomiędzy typem wartościowym, a refercyjnym?
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>2. Co to jest UnBoxing i Boxing?
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-1-1  Proszę podać róźnice pomiędzy typem wartościowym, a refercyjnym</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 61px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 60px !important;">
+                        int a = 20;
+                        int b = a;
+            
+                        a = 40;
+                        Console.WriteLine(b);
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-1-2  Proszę podać róźnice pomiędzy typem wartościowym, a refercyjnym</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 24px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 24px !important;">
+                        static void Main(string[] args)
+                        {
+                            Cat c1 = new Cat();
+                            c1.Name = "Billy";
+                
+                            Cat c2 = c1;
+                            c2.Name = "Hanna";
+                
+                            Console.WriteLine(c1.Name);
+                            //Hanna
+                
+                        }
+                
+                        public class Cat
+                        {
+                            public string Name { get; set; }
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide  creamGrey ggg">
+        <span class="shout colors"><span>C#-1-3 <br /> A gdzie żyje w pamięci typ wartościowy, a typ referencyjny?
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>2. Podchwytlie pytania z Task.Delay.
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/CSharp_01.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/CSharp_02.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/CSharp_03.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/CSharp_04.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/CSharp_05.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/CSharp_06.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide  creamGrey ggg">
+        <span class="shout colors"><span>Spoiler : Niektóre pytania przypominiają mi, aby wam polecić książke Konrada Kokosy
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>3. Podchwytliwe pytanie na temat domknięć w C#
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/book.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/book_01.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-2-1 <br /> Co to jest UnBoxing i Boxing?
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>3. Pytania na poliformizm
+
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-2-1 Co to jest UnBoxing i Boxing?</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 41px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 40px !important;">
+                        int i = 123;
+                        // The following line boxes i.
+                        object o = i;
+
+                        o = 123;
+                        i = (int)o;  // unboxing
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-3-1 <br />Podchwytliwe pytania z Task.Delay
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>4. Róźnica między interfejsem, a klasą abstrakcyjną
+    
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-3-1 Podchwytliwe pytania z Task.Delay</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 22px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 22px !important;">
+
+                        private static string result;
+
+                        static void Main()
+                        {
+                            SaySomething();
+                            Console.WriteLine(result);
+                        }
+                    
+                        static async Task&#x3C;int&#x3E; SaySomething()
+                        {
+                            await Task.Delay(10);
+                            result = "Hello!";
+                            return 1;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-3-1 Podchwytliwe pytania z Task.Delay</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 22px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 22px !important;">
+
+                        private static string result;
+
+                        static void Main()
+                        {
+                            SaySomething();
+                            Console.WriteLine(result);
+                        }
+                    
+                        static async Task&#x3C;int&#x3E; SaySomething()
+                        {
+                            await Task.Delay(10);
+                            result = "Hello!";
+                            return 1;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    [NIC]
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-3-2 Podchwytlie pytania z Task.Delay</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 22px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 22px !important;">
+
+                        private static string result;
+
+                        static void Main()
+                        {
+                            SaySomething();
+                            Console.WriteLine(result);
+                        }
+                
+                        static async Task&#x3C;int&#x3E; SaySomething()
+                        {
+                            Thread.Sleep(10);
+                            result = "Hello!";
+                            return 1;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz full">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-3-2 Podchwytlie pytania z Task.Delay</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 22px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 22px !important;">
+
+                        private static string result;
+
+                        static void Main()
+                        {
+                            SaySomething();
+                            Console.WriteLine(result);
+                        }
+                
+                        static async Task&#x3C;int&#x3E; SaySomething()
+                        {
+                            Thread.Sleep(10);
+                            result = "Hello!";
+                            return 1;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz full">
+                    Hello
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-4-1<br />  Podchwytliwe pytanie na temat domknięć w C#
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>5. Co robi ref,out w C#
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-4-1 Podchwytliwe pytanie na temat domknięć w C#</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 27px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 27px !important;">
+                        List<Task> tasks = new List<Task>();
+
+                        for (int i = 0; i < 80; i++)
+                        {
+                            tasks.Add(new Task(() => Console.WriteLine(i)));
+                        }
+
+                        foreach (var item in tasks)
+                        {
+                            item.RunSynchronously();
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-4-1 Podchwytliwe pytanie na temat domknięć w C#</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 27px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 27px !important;">
+                        List<Task> tasks = new List<Task>();
+
+                        for (int i = 0; i < 80; i++)
+                        {
+                            tasks.Add(new Task(() => Console.WriteLine(i)));
+                        }
+
+                        foreach (var item in tasks)
+                        {
+                            item.RunSynchronously();
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    80
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-4-2 Podchwytliwe pytanie na temat domknięć w C#</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 27px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 27px !important;">
+
+                        for (int i = 0; i < 80; i++)
+                        {
+                            Task.Run(() => Console.WriteLine(i));
+                        }
+
+                        for (int i = 0; i < 11; i++)
+                        {
+                            Task.Run(() => Console.WriteLine(i));
+                        }
+
+                        Console.Read();
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-4-2 Podchwytliwe pytanie na temat domknięć w C#</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 27px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 27px !important;">
+
+                        for (int i = 0; i < 80; i++)
+                        {
+                            Task.Run(() => Console.WriteLine(i));
+                        }
+
+                        for (int i = 0; i < 11; i++)
+                        {
+                            Task.Run(() => Console.WriteLine(i));
+                        }
+
+                        Console.Read();
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    [Wynik będzie losowy i liczby będą się powtarzać]
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/CO.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-4-4 Podchwytliwe pytanie na temat domknięć w C#</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 27px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 27px !important;">
+
+                        List<Task> tasks = new List<Task>();
+
+                        for (int i = 0; i < 80; i++)
+                        {
+                            int newi = i;
+                            tasks.Add(new Task(() => Console.WriteLine(newi)));
+                        }
+
+                        foreach (var item in tasks)
+                        {
+                            item.RunSynchronously();
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-4-4 Podchwytliwe pytanie na temat domknięć w C#</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 27px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 27px !important;">
+
+                        List<Task> tasks = new List<Task>();
+
+                        for (int i = 0; i < 80; i++)
+                        {
+                            int newi = i;
+                            tasks.Add(new Task(() => Console.WriteLine(newi)));
+                        }
+
+                        foreach (var item in tasks)
+                        {
+                            item.RunSynchronously();
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    [0,1,2...79]
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>JavaScript<br />  To samo pytanie można zadać w JavaScript
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>6. Co robi override w C#?
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">JavaScript To samo pytanie można zadać w JavaScript</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 27px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 27px !important;">
+                        for(var i=0; i&#x3C;4; i++) {
+                            setTimeout(
+                              // argument #1 to setTimeout is a function.
+                              // this &#x22;outer function&#x22; is immediately executed, with &#x60;i&#x60; as its parameter
+                              (function(x) {
+                                // the &#x22;outer function&#x22; returns an &#x22;inner function&#x22; which now has x=i at the
+                                // time the &#x22;outer function&#x22; was called
+                                return function() {  
+                                  console.log(&#x22;i==&#x22;+i+&#x22;, x==&#x22;+x);
+                                };
+                              })(i) // execute the &#x22;closure&#x22; immediately, x=i, returns a &#x22;callback&#x22; function
+                            // finishing up arguments to setTimeout
+                            , i*100);
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container-answerquestion">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">JavaScript To samo pytanie można zadać w JavaScript</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 27px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 27px !important;">
+                        for(var i=0; i&#x3C;4; i++) {
+                            setTimeout(
+                              // argument #1 to setTimeout is a function.
+                              // this &#x22;outer function&#x22; is immediately executed, with &#x60;i&#x60; as its parameter
+                              (function(x) {
+                                // the &#x22;outer function&#x22; returns an &#x22;inner function&#x22; which now has x=i at the
+                                // time the &#x22;outer function&#x22; was called
+                                return function() {  
+                                  console.log(&#x22;i==&#x22;+i+&#x22;, x==&#x22;+x);
+                                };
+                              })(i) // execute the &#x22;closure&#x22; immediately, x=i, returns a &#x22;callback&#x22; function
+                            // finishing up arguments to setTimeout
+                            , i*100);
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli?</h3>
+                </div>
+                <div class="odpowiedz">
+                    i==4,x==0,i==4,x==1...
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-5<br /> Jak działają domknięcia w C# po stronie kompilacyjnej
         </span></span>
     </section>
-    <section class="slide creamP">
-        <span class="shout colors"><span>1. Co robi metoda Finalize, Dispose?
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>Odpowiedź<br /> Są one lokalną zmienną w generowanej klasie przez kompilator 
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-6<br /> Pytania na poliformizm
+        </span></span>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-6-1 Pytania na poliformizm#</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 14px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 14px !important;">
+                        public class Shape
+                        {
+                                
+                        }
+                        
+                        public class Square : Shape
+                        {
+                        
+                        }
+                        
+                        public class Triangle : Shape
+                        {
+                        
+                        }
+                        
+                        public class Program
+                        {
+                            static void Main(string[] args)
+                            {
+                                var shapes = new List()
+                                {
+                                    new Square(),
+                                    new Triangle()
+                                };
+                            }
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+               
+                </div>
+                <div class="odpowiedz">
+                   
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle">
+                <h2 class="headerCODE">C#-6-2 Pytania na poliformizm#</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 14px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 14px !important;">
+                        public class Shape
+                        {
+                            public virtual void Draw()
+                            {
+                            }
+                        }
+                        
+                        public class Square : Shape
+                        {
+                            public override void Draw()
+                            {
+                                Console.WriteLine("Draw Square");
+                            }
+                        }
+                        
+                        public class Triangle : Shape
+                        {
+                            public override void Draw()
+                            {
+                                Console.WriteLine("Draw Triangle");
+                            }
+                        }
+                        
+                        
+                        public class Program
+                        {
+                            static void Main(string[] args)
+                            {
+                                var shapes = new List<Shape>()
+                                {
+                                    new Square(),
+                                    new Triangle()
+                                };
+                        
+                                foreach (var shape in shapes)
+                                {
+                                     shape.Draw();
+                                }
+                            }
+                        }
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+               
+                </div>
+                <div class="odpowiedz">
+                   
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-7<br /> Róźnica między interfejsem, a klasą abstrakcyjną
+        </span></span>
+    </section>
+    <section class="slide creamGrey  compact">
+        <h2>Róźnica między interfejsem, a klasą abstrakcyjną</h2>
+        <ol>
+            <li class="next">Pamiętaj, że od C# 8.0 odpowiedź na to pytanie się zmieniło</li>
+            <li class="next">Rekruterów to jednak nie obchodzi</li>
+        </ol>
+    </section>
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-8<br /> Co robi ref,out w C#
+        </span></span>
+    </section>
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-9<br /> Co robi override w C#?
+        </span></span>
+    </section>
+    <section class="slide creamGrey ggg">
+        <span class="shout colors"><span>C#-10<br /> Co robi metoda Finalize, Dispose?
+        </span></span>
+    </section>
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>2. Jak działa Garabe Collector według pana?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>2. Czy Garbage Collector poradzi sobie z referencja cykliczną?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>3. Jak Garabe Collector oznacza elementy.
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Jak działa porównanie stringów
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Dlaczego tworzymy typy generyczne?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span> Jak możemy ograniczać generyki? (pytanie nie w prost)
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Do czego służy "using"?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Dziedziczenie po co jest ? 
             <br>
             XD
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Co jest lepsze dziedziczenie czy kompozycja?
         </span></span>
     </section>
 
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Róźnica pomiędzy IEnumerable, IList, IQueryable
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Róźnica pomiędzy Size Stream, a Byte Array
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Typy generyczne : Kontrawariancja i Wariancja
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Readonly jak działa?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Czy każdy wyjątek zostaje przechwycony w catch?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>StackOverflow, AcessVilation
         </span></span>
     </section>
 
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Róźnica pomiędzy metodą Single(), First()?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Co będzie szybsze metoda First() czy szukanie w kolekcji Dictionary?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Memory size allocation with List in C#
         </span></span>
     </section>
 
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Lazy Loading, Eager Loading w Enity Framework
         </span></span>
     </section>
 
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Jaki najlepszy cykl życia byłby dla DBContext w Entity Framework bądź obiektu Session w NHibernate i dlaczego Tak i Nie?
         </span></span>
     </section>
 
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>.NET
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>1. Jaka jest róźnica pomiędzy .NET, a .NET Core
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Runtime Polymorph i Compile Polymorphism?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>LateBinding i OnlyBinding
         </span></span>
     </section>
 
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>GIT
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Róźnica pomiędzy merge, a rebase
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Co to jest cherrypick
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>Co to jest pullrequest?
         </span></span>
     </section>
 
 
 
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>ASP.NET CORE
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>1. Czym jest middleware?
         </span></span>
     </section>
-    <section class="slide creamP">
+    <section class="slide creamGrey ggg">
         <span class="shout colors"><span>2. Co to jest Kestrel?
         </span></span>
     </section>
@@ -1026,7 +1722,12 @@
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <img class="cover" src="pictures/Umowa o pracęAB2B_09.png" alt="blog">
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/Umowa o pracęAB2B_09.PNG.png" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
 
     <section class="slide creamP">
         <span class="shout colors"><span>Pieniądze to nie wszystko?

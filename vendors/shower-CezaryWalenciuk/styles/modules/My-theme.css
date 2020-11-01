@@ -74,6 +74,10 @@ border-color: transparent transparent #FF6525;
     background-color:#818181 ;
 }
 
+.slide.creamGrey.ggg {
+    background-color:#818181 ;
+}
+
 
 .slide.black {
     background-color:black ;
@@ -177,6 +181,13 @@ font-size: 40%;
     padding: 5px;
     color: white;
 }
+
+.slide.creamGrey.ggg span span {
+    background-color: #8de6b0;;; 
+    padding: 5px;
+    color: black;
+}
+
 
 .slide.creamGrey span span a{
     color: #2096BE;
