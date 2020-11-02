@@ -7,7 +7,8 @@
     /* --color-b :#5e7aac;
     --border-color-css:#FF945A; */
 
-    --color-b :#818181 ;
+    --color-b :#525252 ;
+    /* --border-color-css:#8de6b0; */
     --border-color-css:#8de6b0;
 }
 
@@ -200,7 +201,8 @@ padding-top: 1em !important;
 .odpowiedz {
     grid-area: odpowiedz;
     margin-left: 30px;;
-    margin-bottom: 20px;;
+    margin-bottom: 50px;
+    margin-top: 5px;
     
 }
 

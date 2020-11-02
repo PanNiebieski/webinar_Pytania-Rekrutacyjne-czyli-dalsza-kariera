@@ -78,6 +78,21 @@ border-color: transparent transparent #FF6525;
     background-color:#818181 ;
 }
 
+.slide.creamGrey.ooo {
+    background-color:#818181 ;
+}
+
+
+.slide.creamGrey.lll {
+    background-color:#818181 ;
+}
+.slide.creamGrey.kkk {
+    background-color:#818181 ;
+}
+
+
+
+
 
 .slide.black {
     background-color:black ;
@@ -187,6 +202,32 @@ font-size: 40%;
     padding: 5px;
     color: black;
 }
+
+.slide.creamGrey.ppp span span {
+    background-color: #9f8de6;;;; 
+    padding: 5px;
+    color: white;
+}
+
+.slide.creamGrey.ooo span span {
+    background-color: #cee68d;;;
+    padding: 5px;
+    color: black;
+}
+
+.slide.creamGrey.lll span span {
+    background-color: #e6ce8d;;;
+    padding: 5px;
+    color: black;
+}
+
+.slide.creamGrey.kkk span span {
+    background-color: #8de3e6;;;
+    padding: 5px;
+    color: black;
+}
+
+
 
 
 .slide.creamGrey span span a{
