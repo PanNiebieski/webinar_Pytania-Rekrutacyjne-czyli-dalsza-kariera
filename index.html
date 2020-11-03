@@ -2579,6 +2579,92 @@
         <span class="shout colors">SQL-03<br /><span>Co robi PIVOT i UNPIVOT?
         </span></span>
     </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">6-10-1 Zmiana wierszy na kolumny</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 31px;overflow: hidden;  " class="language-sql">
+                    <code style="line-height: 40px !important;">
+                        SELECT ShiftName,
+                        Production,
+                        Engineering,
+                        Marketing
+                        FROM (SELECT s.Name AS ShiftName,
+                        h.BusinessEntityID,
+                        d.Name AS DepartmentName
+                        FROM HumanResources.EmployeeDepartmentHistory h
+                        INNER JOIN HumanResources.Department d
+                        ON h.DepartmentID = d.DepartmentID
+                        INNER JOIN HumanResources.Shift s
+                        ON h.ShiftID = s.ShiftID
+                        WHERE EndDate IS NULL
+                        AND d.Name IN ('Production', 'Engineering', 'Marketing')
+                        ) AS a
+                        PIVOT
+                        (
+                        COUNT(BusinessEntityID)
+                        FOR DepartmentName IN ([Production], [Engineering], [Marketing])
+                        ) AS b
+                        ORDER BY ShiftName;
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">6-11 Zmiana kolumn na wiersze</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 31px;overflow: hidden;  " class="language-sql">
+                    <code style="line-height: 40px !important;">
+                        IF OBJECT_ID('tempdb.dbo.#Contact') IS NOT NULL DROP TABLE #Contact;
+                        CREATE TABLE #Contact
+                        (
+                        EmployeeID INT NOT NULL,
+                        PhoneNumber1 BIGINT,
+                        PhoneNumber2 BIGINT,
+                        PhoneNumber3 BIGINT
+                        )
+                        GO
+                        INSERT #Contact
+                        (EmployeeID, PhoneNumber1, PhoneNumber2, PhoneNumber3)
+                        VALUES (1, 2718353881, 3385531980, 5324571342),
+                        (2, 6007163571, 6875099415, 7756620787),
+                        (3, 9439250939, NULL, NULL);
+                        SELECT EmployeeID,
+                        PhoneType,
+                        PhoneValue
+                        FROM #Contact c
+                        UNPIVOT
+                        (
+                        PhoneValue
+                        FOR PhoneType IN ([PhoneNumber1], [PhoneNumber2], [PhoneNumber3])
+                        ) AS p;
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="slide creamGrey lll">
         <span class="shout colors">SQL-04<br /><span>Co to jest "HAVING" ?
         </span></span>
@@ -2606,10 +2692,26 @@
     <section class="slide creamGrey  compact">
         <h2>Jak pan by wysłał wiele parametrów do procedury?</h2>
         <ol>
-            <li class="next">Użyć Table Valued Parameters </li>
+            <li class="next">Użyć Table Valued Parameters</li>
             <li class="next">Wysłać JSON-a</li>
+            <li class="next">Użyć pętli na przecinkowym stringu</li>
         </ol>
     </section>
+    <section class="slide creamGrey  compact">
+        <h2>Jak pan by wysłał wiele parametrów do procedury?</h2>
+        <ol>
+            <li class="next">Tworzyć dynamiczny SQL (tak robiłem w 1 pracy)</li>
+            <li class="next">Utworzyć procedurę z 100 parametrami które mogą być NULL</li>
+            <li class="next">Użyć charindex, patindex czy LIKE.</li>
+        </ol>
+    </section>
+    <section class="slide creamGrey bbb">
+        <span class="shout colors"><span><a href="https://stackoverflow.com/questions/43249/t-sql-stored-procedure-that-accepts-multiple-id-values">
+            StackOverflow służy pomocą
+        </a>
+        </span></span>
+    </section>
+ 
     <section class="slide creamGrey lll">
         <span class="shout colors">SQL-07<br /><span>Jakie mamy tranzakcje w SQL Server i co to jest?
         </span></span>
@@ -2688,7 +2790,18 @@
         <span class="shout colors">SQL-08<br /><span>Czy można zrobić Indeks na typie GUID?
         </span></span>
     </section>
-
+    <section class="slide creamGrey lll">
+        <span class="shout colors">SQL-09<br /><span>Co robi SET NOCOUNT?
+        </span></span>
+    </section>
+    <section class="slide creamGrey lll">
+        <span class="shout colors">SQL-10<br /><span>Jak skasować szybko dużo rekrodów?
+        </span></span>
+    </section>
+    <section class="slide creamGrey lll">
+        <span class="shout colors">SQL-11<br /><span>Update : Zmiana GIGATYCZNYCH wartości w kolumnach
+        </span></span>
+    </section>
     <section class="slide creamGrey ppp">
         <span class="shout colors"><span>Angular
         </span></span>
