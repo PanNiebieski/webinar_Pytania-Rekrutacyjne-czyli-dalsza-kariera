@@ -371,7 +371,7 @@
     </section>
     <section class="slide cream">
         <span class="shout colors"><span>
-            Nawet jeśli zawaliś pytania czy twoje CV nie pasuje do stanowiska.
+            Nawet jeśli zawalisz pytania czy twoje CV nie pasuje do stanowiska.<br />
             To wciąż masz szanse znaleźć prace
         </span></span>
     </section>
@@ -724,11 +724,11 @@
                 <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
                     <code style="line-height: 25px !important;">
 
-                        List<Task> tasks = new List<Task>();
+                        List&#x3C;Task&#x3E; tasks = new List&#x3C;Task&#x3E;();
 
-                        for (int i = 0; i < 80; i++)
+                        for (int i = 0; i &#x3C; 80; i++)
                         {
-                            tasks.Add(new Task(() => Console.WriteLine(i)));
+                            tasks.Add(new Task(() =&#x3E; Console.WriteLine(i)));
                         }
 
                         foreach (var item in tasks)
@@ -757,11 +757,11 @@
                 <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
                     <code style="line-height: 25px !important;">
 
-                        List<Task> tasks = new List<Task>();
+                        List&#x3C;Task&#x3E; tasks = new List&#x3C;Task&#x3E;();
 
-                        for (int i = 0; i < 80; i++)
+                        for (int i = 0; i &#x3C; 80; i++)
                         {
-                            tasks.Add(new Task(() => Console.WriteLine(i)));
+                            tasks.Add(new Task(() =&#x3E; Console.WriteLine(i)));
                         }
 
                         foreach (var item in tasks)
@@ -862,12 +862,12 @@
                 <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
                     <code style="line-height: 25px !important;">
 
-                        List<Task> tasks = new List<Task>();
+                        List&#x3C;Task&#x3E; tasks = new List&#x3C;Task&#x3E;();
 
-                        for (int i = 0; i < 80; i++)
+                        for (int i = 0; i &#x3C; 80; i++)
                         {
                             int newi = i;
-                            tasks.Add(new Task(() => Console.WriteLine(newi)));
+                            tasks.Add(new Task(() =&#x3E; Console.WriteLine(newi)));
                         }
 
                         foreach (var item in tasks)
@@ -896,12 +896,12 @@
                 <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
                     <code style="line-height: 25px !important;">
 
-                        List<Task> tasks = new List<Task>();
+                        List&#x3C;Task&#x3E; tasks = new List&#x3C;Task&#x3E;();
 
-                        for (int i = 0; i < 80; i++)
+                        for (int i = 0; i &#x3C; 80; i++)
                         {
                             int newi = i;
-                            tasks.Add(new Task(() => Console.WriteLine(newi)));
+                            tasks.Add(new Task(() =&#x3E; Console.WriteLine(newi)));
                         }
 
                         foreach (var item in tasks)
@@ -1008,7 +1008,7 @@
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle">
-                <h2 class="headerCODE">C#-6-1 Pytania na poliformizm#</h2>
+                <h2 class="headerCODE">C#-6-1 Pytania na poliformizm</h2>
             </div>
             <div class="PlaceCodeHere">
                 <pre style="font-size: 19px;overflow: hidden;  " class="language-csharp">
@@ -1033,7 +1033,7 @@
                         {
                             static void Main(string[] args)
                             {
-                                var shapes = new List()
+                                var shapes = new Shape[]
                                 {
                                     new Square(),
                                     new Triangle()
@@ -1090,7 +1090,7 @@
                         {
                             static void Main(string[] args)
                             {
-                                var shapes = new List<Shape>()
+                                var shapes = new List&#x3C;Shape&#x3E;()
                                 {
                                     new Square(),
                                     new Triangle()
@@ -1515,7 +1515,7 @@
         <ol>
             <li class="next">Nie. Gdy proces aplikacja natychmiastowo się zamknie</li>
             <li class="next">Nie. Jeśli inny finalize wyrzucił wyjątek</li>
-            <li class="next">Nie. Jeśli poleciał timeout</li>
+
         </ol>
     </section>
     <section class="slide" style="background-color:black">
@@ -1537,7 +1537,7 @@
         <h2>Jak działa Garabe Collector według pana/pani?</h2>
         <ol>
             <li class="next">GC uruchamia się przynajmniej w 2 momentach, gdy kończy się pamięć na stercie do umieszczenia kolejnego obiektu lub gdy OS zgłasza mało pamięci.</li>
-            <li class="next">GC szuka obiektów które nie są już przez referowane w zmiennych</li>
+            <li class="next">GC szuka obiektów które nie są już  referowane przez zmienne</li>
         </ol>
     </section>
     <section class="slide creamGrey ggg">
@@ -1686,7 +1686,7 @@
           </div>
     </section>
     <section class="slide creamGrey ggg">
-        <span class="shout colors">#-18<br /><span>CDziedziczenie po co jest ? 
+        <span class="shout colors">#-18<br /><span>Dziedziczenie po co jest ? 
             <br><br />
             😂
         </span></span>
@@ -2145,12 +2145,7 @@
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide" style="background-color:black">
-        <figure>
-            <img class="cover" src="pictures/CSharp_09.PNG" alt="blog">
-            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
-        </figure>
-    </section>
+
     <section class="slide creamGrey ggg">
         <span class="shout colors">C#-33<br /><span>Do czego służszą atrybuty w C#?
         </span></span>
@@ -2160,7 +2155,7 @@
         </span></span>
     </section>
     <section class="slide creamGrey ggg">
-        <span class="shout colors">C#-35<br /><span>Jak byś zasumlował wielodziedziczenie w C#?
+        <span class="shout colors">C#-35<br /><span>Jak byś zasymulował wielodziedziczenie w C#?
         </span></span>
     </section>
     <section class="slide creamGrey ppp">
@@ -2193,7 +2188,7 @@
         </span></span>
     </section>
     <section class="slide creamGrey ggg">
-        <span class="shout colors">GIT-3<br /><span>Co to jest pullrequest?
+        <span class="shout colors">GIT-3<br /><span>Co to jest Pull Request?
         </span></span>
     </section>
 
@@ -2258,15 +2253,15 @@
         </span></span>
     </section>
     <section class="slide creamGrey ggg">
-        <span class="shout colors"><span>ASP.NET CORE-5<br />Jak by pan napisał prostą aplikację CRUD?
+        <span class="shout colors">ASP.NET CORE-5<br /><span>Jak by pan napisał prostą aplikację CRUD?
         </span></span>
     </section>
     <section class="slide creamGrey ggg">
-        <span class="shout colors"><span>ASP.NET CORE-6<br />Filtry Web API do czego służą
+        <span class="shout colors">ASP.NET CORE-6<br /><span>Filtry Web API do czego służą
         </span></span>
     </section>
     <section class="slide creamGrey ggg">
-        <span class="shout colors"><span>ASP.NET CORE-7<br />Jakie typy routingu są wspierany przez Web API 2
+        <span class="shout colors">ASP.NET CORE-7<br /><span>Jakie typy routingu są wspierany przez Web API 2
         </span></span>
     </section>
     <section class="slide creamGrey ppp">
@@ -3340,8 +3335,8 @@
                 <h2 class="headerCODE">Napisz mi metodę która pogrupuje daty do nowej listy Tupletów</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 15px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height: 20px !important;">
+                <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 25px !important;">
                         static void Main(string[] args)
                         {
                             List&#x3C;DateTime&#x3E; daty = new List&#x3C;DateTime&#x3E;();
@@ -3353,7 +3348,8 @@
                             var f = Arrage(daty);
                         }
                 
-                        public static List&#x3C;Tuple&#x3C;DateTime, DateTime&#x3E;&#x3E; Arrage(List&#x3C;DateTime&#x3E; array)
+                        public static List&#x3C;Tuple&#x3C;DateTime, DateTime&#x3E;&#x3E; 
+                        Arrage(List&#x3C;DateTime&#x3E; array)
                         {
 
                         }
@@ -3445,8 +3441,8 @@
                 <h2 class="headerCODE">Napisz mi metodę która zwerfikuje podany napisy</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 15px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height: 20px !important;">
+                <pre style="font-size: 28px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 29px !important;">
                         static void Main(string[] args)
                         {
                             string[] correct = new string[] {"AB","ABAB" };
