@@ -2254,7 +2254,7 @@
           </div>
     </section>
     <section class="slide creamGrey bbb">
-        <span class="shout colors"><span>Chodzi o pule soketów.<br /> Rozwiążanie użyć HttpMessageFactory?
+        <span class="shout colors"><span>Chodzi o pule soketów.<br /> Rozwiążanie użyć HttpMessageFactory
         </span></span>
     </section>
     <section class="slide creamGrey ggg">
@@ -2266,7 +2266,7 @@
         </span></span>
     </section>
     <section class="slide creamGrey ggg">
-        <span class="shout colors"><span>ASP.NET CORE-7<br />Jakie typy routingu jest wspierany przez Web API 2
+        <span class="shout colors"><span>ASP.NET CORE-7<br />Jakie typy routingu są wspierany przez Web API 2
         </span></span>
     </section>
     <section class="slide creamGrey ppp">
@@ -2290,7 +2290,7 @@
         </span></span>
     </section>
     <section class="slide creamGrey lll">
-        <span class="shout colors">JavaScript-1<br /><span>Co jest "Promise"?
+        <span class="shout colors">JavaScript-1<br /><span>Co to jest "Promise"?
         </span></span>
     </section>
     <section class="slide creamGrey lll">
@@ -2341,13 +2341,10 @@
                 <div class="pytanie">
                     <h3>💡 Co pojawi się w konsoli ?</h3>
                 </div>
-                <div class="odpowiedz">
-                    <pre style=" overflow: hidden; background-color: whitesmoke;;"
-                    class="language-javascript">
-                        <code>
-                            Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …}
-                        </code>
-                    </pre>
+                <div class="odpowiedz full">
+               
+                    Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …}
+                     
                 </div>
             </div>
           </div>
@@ -2375,7 +2372,7 @@
         </span></span>
     </section>
     <section class="slide creamGrey lll">
-        <span class="shout colors">JavaScript-8<br /><span>Czy pan kojarzy tą technikę? Curring?
+        <span class="shout colors">JavaScript-8<br /><span>Czy pan kojarzy tą technikę?
         </span></span>
     </section>
     <section class="slide prism over bhgry">
@@ -2384,8 +2381,8 @@
                 <h2 class="headerCODE">JavaScript-8 Czy pan kojarzy tą technikę?</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 28px;overflow: hidden;  " class="language-javascript">
-                    <code style="line-height: 28px !important;">
+                <pre style="font-size: 38px;overflow: hidden;  " class="language-javascript">
+                    <code style="line-height: 38px !important;">
                         (function(a) {
 
                             return (function(b) {
@@ -2412,7 +2409,7 @@
     </section>
 
     <section class="slide creamGrey lll">
-        <span class="shout colors">JavaScript-9<br /><span>Jakie są funkcje na ustwienie wartości "this"
+        <span class="shout colors">JavaScript-9<br /><span>Jakie są funkcje na ustawienie wartości "this"
         </span></span>
     </section>
     <section class="slide creamGrey bbb">
@@ -2585,27 +2582,27 @@
                 <h2 class="headerCODE">6-10-1 Zmiana wierszy na kolumny</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 31px;overflow: hidden;  " class="language-sql">
-                    <code style="line-height: 40px !important;">
+                <pre style="font-size: 21px;overflow: hidden;  " class="language-sql">
+                    <code style="line-height: 21px !important;">
                         SELECT ShiftName,
                         Production,
                         Engineering,
                         Marketing
-                        FROM (SELECT s.Name AS ShiftName,
-                        h.BusinessEntityID,
-                        d.Name AS DepartmentName
-                        FROM HumanResources.EmployeeDepartmentHistory h
-                        INNER JOIN HumanResources.Department d
-                        ON h.DepartmentID = d.DepartmentID
-                        INNER JOIN HumanResources.Shift s
-                        ON h.ShiftID = s.ShiftID
-                        WHERE EndDate IS NULL
-                        AND d.Name IN ('Production', 'Engineering', 'Marketing')
-                        ) AS a
+                            FROM (SELECT s.Name AS ShiftName,
+                            h.BusinessEntityID,
+                            d.Name AS DepartmentName
+                            FROM HumanResources.EmployeeDepartmentHistory h
+                                INNER JOIN HumanResources.Department d
+                                ON h.DepartmentID = d.DepartmentID
+                                INNER JOIN HumanResources.Shift s
+                                ON h.ShiftID = s.ShiftID
+                            WHERE EndDate IS NULL
+                            AND d.Name IN ('Production', 'Engineering', 'Marketing')
+                            ) AS a
                         PIVOT
                         (
-                        COUNT(BusinessEntityID)
-                        FOR DepartmentName IN ([Production], [Engineering], [Marketing])
+                            COUNT(BusinessEntityID)
+                            FOR DepartmentName IN ([Production], [Engineering], [Marketing])
                         ) AS b
                         ORDER BY ShiftName;
                     </code>
@@ -2621,36 +2618,44 @@
             </div>
         </div>
     </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/sqlresult-02.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle"> 
                 <h2 class="headerCODE">6-11 Zmiana kolumn na wiersze</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 31px;overflow: hidden;  " class="language-sql">
-                    <code style="line-height: 40px !important;">
+                <pre style="font-size: 14px;overflow: hidden;  " class="language-sql">
+                    <code style="line-height: 14px !important;">
                         IF OBJECT_ID('tempdb.dbo.#Contact') IS NOT NULL DROP TABLE #Contact;
                         CREATE TABLE #Contact
                         (
-                        EmployeeID INT NOT NULL,
-                        PhoneNumber1 BIGINT,
-                        PhoneNumber2 BIGINT,
-                        PhoneNumber3 BIGINT
+                            EmployeeID INT NOT NULL,
+                            PhoneNumber1 BIGINT,
+                            PhoneNumber2 BIGINT,
+                            PhoneNumber3 BIGINT
                         )
                         GO
+
                         INSERT #Contact
                         (EmployeeID, PhoneNumber1, PhoneNumber2, PhoneNumber3)
                         VALUES (1, 2718353881, 3385531980, 5324571342),
                         (2, 6007163571, 6875099415, 7756620787),
                         (3, 9439250939, NULL, NULL);
+
                         SELECT EmployeeID,
                         PhoneType,
                         PhoneValue
                         FROM #Contact c
                         UNPIVOT
                         (
-                        PhoneValue
-                        FOR PhoneType IN ([PhoneNumber1], [PhoneNumber2], [PhoneNumber3])
+                            PhoneValue
+                            FOR PhoneType IN ([PhoneNumber1], [PhoneNumber2], [PhoneNumber3])
                         ) AS p;
                     </code>
                 </pre>
@@ -2664,6 +2669,12 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/sqlresult-01.PNG" alt="blog">
+            <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
+        </figure>
     </section>
     <section class="slide creamGrey lll">
         <span class="shout colors">SQL-04<br /><span>Co to jest "HAVING" ?
@@ -2683,7 +2694,7 @@
     </section>
     <section class="slide creamGrey  compact">
         <h2>Jak pan by wysłał wiele parametrów do procedury?</h2>
-        <ol>
+        <ol class="nonumbers">
             <li class="next">Wysłać listę parametreów jako VARCHAR (CSV)</li>
             <li class="next">Przesłać XML</li>
             <li class="next">Użyć tabelki tymczasowej</li>
@@ -2691,7 +2702,7 @@
     </section>
     <section class="slide creamGrey  compact">
         <h2>Jak pan by wysłał wiele parametrów do procedury?</h2>
-        <ol>
+        <ol class="nonumbers"> 
             <li class="next">Użyć Table Valued Parameters</li>
             <li class="next">Wysłać JSON-a</li>
             <li class="next">Użyć pętli na przecinkowym stringu</li>
@@ -2699,7 +2710,7 @@
     </section>
     <section class="slide creamGrey  compact">
         <h2>Jak pan by wysłał wiele parametrów do procedury?</h2>
-        <ol>
+        <ol class="nonumbers">
             <li class="next">Tworzyć dynamiczny SQL (tak robiłem w 1 pracy)</li>
             <li class="next">Utworzyć procedurę z 100 parametrami które mogą być NULL</li>
             <li class="next">Użyć charindex, patindex czy LIKE.</li>
@@ -2786,6 +2797,15 @@
             </div>
           </div>
     </section>
+    <section class="slide creamGrey  compact">
+        <h2>Pamiętasz ACID</h2>
+        <ol class="nonumbers">
+            <li class="next">Atomicity</li>
+            <li class="next">Consistency</li>
+            <li class="next">Isolation</li>
+            <li class="next">Durability</li>
+        </ol>
+    </section>
     <section class="slide creamGrey lll">
         <span class="shout colors">SQL-08<br /><span>Czy można zrobić Indeks na typie GUID?
         </span></span>
@@ -2795,7 +2815,7 @@
         </span></span>
     </section>
     <section class="slide creamGrey lll">
-        <span class="shout colors">SQL-10<br /><span>Jak skasować szybko dużo rekrodów?
+        <span class="shout colors">SQL-10<br /><span>Jak skasować szybko dużo rekordów?
         </span></span>
     </section>
     <section class="slide creamGrey lll">
@@ -2848,10 +2868,10 @@
         <span class="shout colors"><span>Pytania z TDD?
         </span></span>
     </section>
-    <!-- <section class="slide creamGrey lll">
+    <section class="slide creamGrey lll">
         <span class="shout colors"><span>TDD-01<br />Co jest wzorzec AAA?
         </span></span>
-    </section> -->
+    </section>
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle">
@@ -3007,7 +3027,7 @@
         </span></span>
     </section>
     <section class="slide creamGrey ooo">
-        <span class="shout colors">Moje ulubione:<span>Mam pan serwis bankowy który robi 2 milony transakcji dzienie. Jak pan to zaprojektuje?
+        <span class="shout colors">Moje ulubione:<span>Mam pan serwis bankowy który robi 2 MILIONY transakcji dzienie. Jak pan to zaprojektuje?
         </span></span>
     </section>
 
@@ -3227,7 +3247,7 @@
           </div>
     </section>
     <section class="slide creamGrey kkk">
-        <span class="shout colors"><span>Napisz mi metodę która policzy ile elementów w tablicy pomijąc powtarzające się wartości?
+        <span class="shout colors"><span>Napisz mi metodę która policzy ile elementów JEST w tablicy pomijąc powtarzające się wartości?
         </span></span>
     </section>
     <section class="slide prism over bhgry">
@@ -3786,7 +3806,7 @@
         <h2>Zalety B2B</h2>
         <ol>
             <li class="next">Możesz do swojej umowy dodać ciekawe zapisy dotyczące pracy zdalnej</li>
-            <li class="next">Mozesz pracować dla wielu osoób na raz</li>
+            <li class="next">Mozesz pracować dla wielu osób na raz</li>
             <li class="next">Możesz odpisywać rzeczy na VAT</li>
         </ol>
     </section>
